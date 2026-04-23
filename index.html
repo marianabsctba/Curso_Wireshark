@@ -790,9 +790,11 @@ function generateCert() {
   ctx.fillText(name, W / 2, 262);
 
   ctx.fillStyle = '#3c3833';
-  ctx.font = '8px Source Serif 4';
+  ctx.font = '7px Source Serif 4';
   const bodyText = 'concluiu com aproveitamento integral a formação técnica em Wireshark, cobrindo captura, análise de protocolos, troubleshooting e investigação de tráfego.';
-  drawCenteredBlock(ctx, bodyText, W / 2, 300, contentWidth - 120, 12, 3);
+  
+  // largura menor + mais espaço entre linhas
+  drawCenteredBlock(ctx, bodyText, W / 2, 300, contentWidth - 180, 14, 4);
 
   ctx.fillStyle = '#244126';
   ctx.font = 'italic 14px Playfair Display';
